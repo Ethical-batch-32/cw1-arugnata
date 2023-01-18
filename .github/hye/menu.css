@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i,600,700,800&display=swap');
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  box-align: "right";
+
+
+  
+  
+}
+.menu-container{
+
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  padding-left: 10%;
+  padding-top: 20%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  float: right;
+}
+.button{
+  position: relative;
+  background: #1b1b1b;
+  color: white;
+  
+  font-size: 20px;
+  padding: 8px 20px;
+  width: 300px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: width .4s;
+}
+.button.expand{
+  width: 100%;
+  
+}
+.fas.expand:before{
+  content: '\f00d';
+  
+}
+nav ul {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  padding: 0 50px;
+
+}
+nav ul li a{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+ul{
+  
+  list-style: none;
+  position: absolute;
+  top: 65px;
+  display: block;
+  background: #1b1b1b;
+  border-radius: 5px;
+  display: none;
+  margin-right: 15px;
+  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+ul:before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #1b1b1b;
+  top: -10px;
+  transform: rotate(100deg);
+  z-index: -1;
+}
+ul li{
+  
+
+  box-align: "right";
+  line-height: 30px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+ul li:last-child{
+  border-bottom: none;
+  
+
+}
+ul li:hover{
+  box-shadow: inset 0 0 5px #33ffff,
+              inset 0 0 10px #66ffff;
+              
+}
+ul li:hover:first-child{
+  border-radius: 5px 5px 0 0;
+  
+}
+ul li:hover:last-child{
+  border-radius: 0 0 5px 5px;
+  
+}
+ul li a{
+  color: white;
+  font-size: 18px;
+  
+  text-decoration: none;
+  
+}
+ul li:hover a{
+  color: cyan;
+  
+}
+
+
+.site-nav-menu p{
+  width: 100;
+}
